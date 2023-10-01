@@ -24,7 +24,7 @@ nltk.download("stopwords")
 # In[3]:
 
 
-df = pd.read_excel('cik_list.xlsx')
+df = pd.read_excel('C:\\Users\\gvnsa\\Downloads\\cik_list.xlsx')
 #df.head()
 
 
@@ -52,7 +52,7 @@ print(f'Total {len(reports)} reports saved')
 # In[ ]:
 
 
-with open('StopWords_Generic.txt','r') as f:
+with open('StopWords.txt','r') as f:
     stop_words = f.read()
 
 stop_words = stop_words.split('\n')
@@ -64,7 +64,7 @@ print(f'Total number of Stop Words are {len(stop_words)}')
 # In[ ]:
 
 
-master_dic = pd.read_excel('LoughranMcDonald_MasterDictionary_2018.xlsx')
+master_dic = pd.read_excel('LoughranMcDonald_Dictionary.xlsx')
 #master_dic.head()
 
 
@@ -82,10 +82,10 @@ print(f"Total negative words in dictionary are {len(negative_dictionary)}")
 # In[ ]:
 
 
-uncertainity = pd.read_excel('uncertainty_dictionary.xlsx')
+uncertainity = pd.read_excel('uncertainty.xlsx')
 uncertainity_words = list(uncertainity['Word'])
 
-constraining = pd.read_excel('constraining_dictionary.xlsx')
+constraining = pd.read_excel('constraining.xlsx')
 constraining_words = list(constraining['Word'])
 
 
